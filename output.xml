@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210520 17:42:00.939" rpa="false">
+<suite id="s1" name="Hiya-Test" source="D:\tutorialFiles\hiya-test\hiya-test.robot">
+<test id="s1-t1" name="Open Test Application For Android">
+<kw name="Open Test Application">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>remote_url=http://localhost:4723/wd/hub</arg>
+<arg>deviceName=TestDevice</arg>
+<arg>platformVersion=10.0</arg>
+<arg>platformName=Android</arg>
+<arg>appPackage=com.hiya.stickers</arg>
+<arg>appActivity=com.hiya.stickers.MainActivity</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:01.181" endtime="20210520 17:42:11.690"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:01.181" endtime="20210520 17:42:11.690"></status>
+</kw>
+<kw name="Close Popup">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:11.691" endtime="20210520 17:42:13.052"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:13.052" endtime="20210520 17:42:13.272"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210520 17:42:15.274" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210520 17:42:13.272" endtime="20210520 17:42:15.274"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:11.691" endtime="20210520 17:42:15.274"></status>
+</kw>
+<kw name="Login">
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>testhiya@mail.com</arg>
+</arguments>
+<msg timestamp="20210520 17:42:15.276" level="INFO">Typing text 'testhiya@mail.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20210520 17:42:15.275" endtime="20210520 17:42:15.486"></status>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20210520 17:42:15.487" level="INFO">Typing password into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20210520 17:42:15.486" endtime="20210520 17:42:16.120"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:16.120" endtime="20210520 17:42:17.052"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:15.275" endtime="20210520 17:42:17.052"></status>
+</kw>
+<kw name="MainPage">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:17.054" endtime="20210520 17:42:22.689"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:17.053" endtime="20210520 17:42:22.690"></status>
+</kw>
+<kw name="Select New Menu">
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:22.691" endtime="20210520 17:42:23.160"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:22.690" endtime="20210520 17:42:23.160"></status>
+</kw>
+<kw name="Swipe to Bottom">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210520 17:42:25.163" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210520 17:42:23.161" endtime="20210520 17:42:25.163"></status>
+</kw>
+<kw name="${i} IN RANGE [ ${round} ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>50</arg>
+<arg>50</arg>
+<arg>0</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:25.163" endtime="20210520 17:42:26.552"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:25.163" endtime="20210520 17:42:26.553"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>50</arg>
+<arg>50</arg>
+<arg>0</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:26.553" endtime="20210520 17:42:27.868"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:26.553" endtime="20210520 17:42:27.869"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:25.163" endtime="20210520 17:42:27.869"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:23.161" endtime="20210520 17:42:27.869"></status>
+</kw>
+<kw name="Change Page">
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[8]/android.widget.TextView</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:27.870" endtime="20210520 17:42:28.625"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:27.870" endtime="20210520 17:42:28.626"></status>
+</kw>
+<kw name="Select Sticker">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[6]/android.widget.EditText</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:28.626" endtime="20210520 17:42:28.932"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.ImageView</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:28.932" endtime="20210520 17:42:30.749"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:28.626" endtime="20210520 17:42:30.750"></status>
+</kw>
+<kw name="Buy Sticker">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[3]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:30.751" endtime="20210520 17:42:34.058"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[3]</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:34.059" endtime="20210520 17:42:34.487"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:34.487" endtime="20210520 17:42:36.010"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:36.010" endtime="20210520 17:42:36.641"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:36.641" endtime="20210520 17:42:37.474"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``. </doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]</arg>
+</arguments>
+<status status="PASS" starttime="20210520 17:42:37.474" endtime="20210520 17:42:37.677"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:30.750" endtime="20210520 17:42:37.678"></status>
+</kw>
+<status status="PASS" starttime="20210520 17:42:01.180" endtime="20210520 17:42:37.679" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210520 17:42:00.941" endtime="20210520 17:42:37.680"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Hiya-Test">Hiya-Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

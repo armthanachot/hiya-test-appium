@@ -1,0 +1,16 @@
+{
+    "pc":{
+    "deviceName": "testDevice",
+    "platformVersion": "11.0",
+    "platformName": "Android",
+    "appPackage": "com.hiya.stickers",
+    "appActivity": "com.hiya.stickers.MainActivity"
+},
+"phone":{
+    "deviceName": "testDevice",
+    "platformVersion": "10.0",
+    "platformName": "Android",
+    "appPackage": "com.hiya.stickers",
+    "appActivity": "com.hiya.stickers.MainActivity"
+}
+}
